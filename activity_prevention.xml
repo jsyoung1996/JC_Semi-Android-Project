@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alwaysDrawnWithCache="false"
+        android:background="#339999"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="예방 방법" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/report"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="22dp"
+                        android:layout_marginTop="70dp"
+                        android:src="@drawable/call_112" />
+
+                    <Button
+                        android:layout_width="130dp"
+                        android:layout_height="64dp"
+                        android:layout_below="@id/report"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/h_button"
+                        android:gravity="center"
+                        android:text="전화 신고\n112"
+                        android:textSize="14dp"
+                        android:textColor="#1ABC9C"
+                        android:onClick="call_112"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/Letter_Counseling"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginBottom="22dp"
+                        android:src="@drawable/comment"
+                        android:layout_centerHorizontal="true" />
+
+                    <Button
+                        android:layout_width="130dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/h_button"
+                        android:gravity="center"
+                        android:text="문자상담\n#0182"
+                        android:textSize="14dp"
+                        android:textColor="#1ABC9C"
+                        android:layout_below="@id/Letter_Counseling"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/button0182"
+                        android:onClick="SMS_0182"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:layout_gravity="center"
+                        android:background="#878787"
+                        android:layout_alignRight="@+id/button0182"
+                        android:layout_alignEnd="@+id/button0182"
+                        android:layout_alignLeft="@+id/button0182"
+                        android:layout_alignStart="@+id/button0182" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/telphone_consultation"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="22dp"
+                        android:layout_marginTop="70dp"
+                        android:src="@drawable/call_182" />
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="130dp"
+                        android:layout_height="64dp"
+                        android:layout_below="@id/telphone_consultation"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/h_button"
+                        android:gravity="center"
+                        android:text="전화 상담\n182"
+                        android:textSize="14dp"
+                        android:textColor="#1ABC9C"
+                        android:onClick="call_182"/>
+
+                    <View
+                        android:layout_width="1dip"
+                        android:layout_height="match_parent"
+                        android:layout_alignBottom="@+id/button2"
+                        android:layout_gravity="right"
+                        android:background="#878787"
+                        android:padding="10dp"
+                        android:layout_alignTop="@+id/telphone_consultation"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/Pre_registration"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginBottom="22dp"
+                        android:src="@drawable/finger_print"
+                        android:layout_centerHorizontal="true" />
+
+                    <Button
+                        android:layout_width="130dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/h_button"
+                        android:gravity="center"
+                        android:text="안전Dream\n지문등사전등록"
+                        android:textSize="14dp"
+                        android:textColor="#1ABC9C"
+                        android:layout_below="@id/Pre_registration"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/PR_button"
+                        android:onClick="Safety_Dream"/>
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="140dp"
+                        android:layout_height="1dip"
+                        android:layout_gravity="center"
+                        android:background="#878787"
+                        android:layout_alignRight="@+id/PR_button"
+                        android:layout_alignEnd="@+id/PR_button"
+                        android:layout_alignLeft="@+id/PR_button"
+                        android:layout_alignStart="@+id/PR_button" />
+
+                    <View
+                        android:layout_width="1dip"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:background="#878787"
+                        android:layout_alignTop="@+id/Pre_registration"
+                        android:layout_alignBottom="@+id/PR_button"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
