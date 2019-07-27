@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alwaysDrawnWithCache="false"
+        android:background="#339999"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="도움말" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/Information_Use"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text=" 이용안내"
+                android:gravity="left|center"
+                android:textSize="22dp"
+                android:textColor="#5e5e5e"
+                android:background="@drawable/h_button"
+                android:drawableRight="@drawable/right_arrow"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:onClick="Guidance"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="서비스 이용안내 FAQ"
+                android:textSize="14dp"
+                android:layout_below="@+id/Information_Use"
+                android:layout_alignLeft="@+id/Information_Use"
+                android:layout_alignStart="@+id/Information_Use"
+                android:layout_marginTop="10dp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_gravity="center"
+        android:background="#a5a5a5" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/question"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text=" 문의하기"
+                android:gravity="left|center"
+                android:textSize="22dp"
+                android:textColor="#5e5e5e"
+                android:background="@drawable/h_button"
+                android:drawableRight="@drawable/right_arrow"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:onClick="question"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="담당자에게 문의메일 보내기"
+                android:textSize="14dp"
+                android:layout_below="@+id/question"
+                android:layout_alignLeft="@+id/question"
+                android:layout_alignStart="@+id/question"
+                android:layout_marginTop="10dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_gravity="center"
+        android:background="#a5a5a5" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+    </LinearLayout>
+</LinearLayout>
